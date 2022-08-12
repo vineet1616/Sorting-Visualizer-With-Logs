@@ -1,0 +1,161 @@
+html
+{
+  background-color: white;
+  margin: 0 25px 25px 25px;
+  text-align: center;
+}
+
+#title-hr
+{
+  margin: 0 25px;
+}
+
+main
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* any section which is a child of main */
+main>section
+{
+  border: solid 1px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  overflow: scroll;
+  padding: 0 25px 25px 25px;
+  max-height: 55vh;
+}
+
+#description-of-the-algorithm
+{
+  margin: 0 25px;
+  text-align: left; 
+}
+
+#input-section
+{
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+#sorting-visualizer-section
+{
+  align-content: center;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.arr-div
+{
+  background-color:lightgrey;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 10px;
+  -moz-transform:rotate(-180deg);
+  -ms-transform:rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  -webkit-transform:rotate(-180deg);
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+}
+
+.blue-div
+{
+  background-color: rgb(150, 150, 255);
+}
+
+.red-div
+{
+  background-color: rgb(255, 147, 97);
+}
+
+.green-div
+{
+  background-color: rgba(0, 196, 98, 0.8);
+}
+
+p.blue-background
+{
+  background-color: rgb(150, 150, 255);
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+p.red-background
+{
+  background-color: rgb(255, 147, 97);
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+p.green-background
+{
+  background-color: rgba(0, 196, 98, 0.8);
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+p.margin-top-20px-bottom-5px
+{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* first paragraph inside a section of id log-section */
+#log-section p:first-of-type
+{
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* any anchor tag that is a child of the footer tag */
+footer>a
+{
+  text-decoration-line: none;
+}
+
+/* any hr tag that is a child of the footer tag */
+footer>hr
+{
+  margin: 25px;
+  /* margin-left: 25px;
+  margin-right: 25px; */
+}
+
+@media (max-width: 1180px) {
+  main
+  {
+    justify-content: center;
+  }
+
+  /* any section which is a child of main */
+  main>section
+  {
+    max-height: 80vh;
+  }
+
+  #log-section
+  {
+    margin-top: 25px;
+    max-height: 55vh;
+  }
+}

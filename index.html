@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visualize sorting algorithms">
+    <meta name="keywords" content="Bubble Sort Insertion Sort Selection Sort">
+    <meta name="robots" content="index, follow">
+
+    <!-- open graph meta tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sorting Visualizer">
+    <meta property="og:url" content="https://bhushan-srivastava.github.io/Sorting-Visualizer/">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/bhushan-srivastava/Sorting-Visualizer/main/images/favicon.png">
+    <meta property="og:description" content="Visualize sorting algorithms">
+
+    <!-- twitter summary card meta tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sorting Visualizer">
+    <meta name="twitter:description" content="Visualize sorting algorithms">
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/bhushan-srivastava/Sorting-Visualizer/main/images/favicon.png">
+    <meta name="twitter:image:alt" content="Image of an array">
+
+    <!-- twitter summary large image card meta tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Document">
+    <meta name="twitter:description" content="description">
+    <meta name="twitter:image" content="some-image-url">
+    <meta name="twitter:image:alt" content="image-alt-text"> -->
+
+    <!-- title -->
+    <title>Sorting Visualizer</title>
+
+    <!-- external style sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- heading of the page -->
+        <h1>
+            <!-- &#128202; is html emoji code for a bar chart emoji -->
+            Sorting Visualizer &#128202;
+        </h1>
+
+        <!-- horizontal line below the title of the page -->
+        <hr id="title-hr">
+
+        <!-- description of the page -->
+        <div id="description-of-the-algorithm">
+            <h2>
+                Bubble Sort
+            </h2>
+
+            <p>
+                Bubble Sort repeatedly steps through the list, compares adjacent elements and swaps them if they are in
+                the wrong order.
+                After each pass, the largest element among the unsorted elements bubbles up i.e. it is placed at the end
+                of the list.
+                The pass through the list is repeated until the list is sorted.
+            </p>
+        </div>
+    </header>
+
+    <!-- main section-->
+    <main>
+        <!-- algorithm visualizer section -->
+        <section id="algorithm-visualizer-section">
+            <!-- input section -->
+            <section id="input-section">
+                <span>
+                    <!-- input the algorithm to visualize -->
+                    <label for="current-algorithm">Which algorithm:</label>
+                    <!-- drop-down menu input -->
+                    <select id="current-algorithm">
+                        <option value="bubble-sort">Bubble Sort</option>
+                        <option value="insertion-sort">Insertion Sort</option>
+                        <option value="selection-sort">Selection Sort</option>
+                    </select>
+                </span>
+
+                <span>
+                    <!-- input the size of the array -->
+                    <label for="size-of-the-array">Size of the list:</label>
+                    <!-- number input with validation -->
+                    <input id="size-of-the-array" type="number" min="1" placeholder="Size"
+                        onkeyup="validity.valid||(value='');">
+                </span>
+
+                <span>
+                    <!-- input the minimum value of the array -->
+                    <label for="min-value-of-the-array">Lowest value of the list:</label>
+                    <!-- number input with validation -->
+                    <input id="min-value-of-the-array" type="number" min="1" placeholder="Min Val"
+                        onkeyup="validity.valid||(value='');">
+                </span>
+
+                <span>
+                    <!-- input the maximum value of the array -->
+                    <label for="max-value-of-the-array">Highest value of the list:</label>
+                    <!-- number input with validation -->
+                    <input id="max-value-of-the-array" type="number" min="1" placeholder="Max Val"
+                        onkeyup="validity.valid||(value='');">
+                </span>
+
+                <span>
+                    <!-- animation speed input -->
+                    <label for="animation-speed">Animation Speed:</label>
+                    <input type="range" id="animation-speed" min="20" max="200">
+                </span>
+
+                <span>
+                    <!-- Generate Random Array Button-->
+                    <button id="generate-random-array">Generate Random List</button>
+
+                    <!-- Start Visualization Button-->
+                    <button id="start-visualization">Start Visualization</button>
+
+                    <hr>
+                </span>
+            </section>
+
+
+            <!-- Sorting Visualizer section -->
+            <section id="sorting-visualizer-section">
+            </section>
+        </section>
+
+        <!-- log section -->
+        <section id="log-section">
+            <p>
+                Logs
+            </p>
+        </section>
+
+        <!-- javascript file -->
+        <script src="./js/App.js" type="module"></script>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <hr>
+
+        <a href="https://github.com/vineet1616/Sorting-Visualizer-With-Logs">Made by Vineet Tomar</a>
+    </footer>
+</body>
+
+</html>
