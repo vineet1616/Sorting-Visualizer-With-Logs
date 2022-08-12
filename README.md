@@ -36,6 +36,7 @@ The algorithm needs one whole pass without any swap to know it is sorted.
 
 CODE in C++
 
+```
 // C++ program for implementation of Bubble sort
 #include <bits/stdc++.h>
 using namespace std;
@@ -72,5 +73,5 @@ int main()
 	printArray(arr, N);
 	return 0;
 }
-
+```
 TIME COMPLEXITY: O(N^2) worst case
